@@ -15,7 +15,7 @@ int main (){
     int centenas2, unidades2, dezenas2;
     int inverter2;
     //variaveís para xyz acima
-    int diferença;
+    int diferenca;
     int inverter;
     int soma1;
     int somafinal;
@@ -35,9 +35,9 @@ int main (){
 
     centenas = abc / 100;
     unidades = abc % 10;
-    diferença = abs(centenas - unidades);
+    diferenca = abs(centenas - unidades);
 
-    if (diferença >= 2){
+    if (diferenca >= 2){
         printf("O número escolhido possui diferença de 2 entre as centenas e unidades. Portanto está dentro dos parâmetros!\n");
     } else {
         printf("O número não está dentro dos parâmetros de diferença entre centenas e unidades! Por favor, escolha outro número.\n");
@@ -59,7 +59,7 @@ int main (){
     dezenas2 = (xyz / 10) % 10;
     inverter2 = unidades2 * 100 + dezenas2 * 10 + centenas2;
     zyx = inverter2;
-    printf("A inversão do valor encontrado acima é: %d", zyx);
+    printf("A inversão do valor encontrado acima é: %d\n", zyx);
     //Somando xyz com zyx
 
     somafinal = xyz + zyx;
